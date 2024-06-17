@@ -1,4 +1,4 @@
-name: 'spring-boot-microservices-container-repo'
+name: 'bookstore-containers-network'
 services:
   catalog-db:
     image: postgres:16-alpine
