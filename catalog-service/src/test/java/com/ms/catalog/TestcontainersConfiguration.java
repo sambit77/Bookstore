@@ -1,4 +1,4 @@
-package com.ms.catalog_service;
+package com.ms.catalog;
 
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
