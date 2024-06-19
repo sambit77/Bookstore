@@ -1,6 +1,5 @@
 package com.ms.order.domain.models;
 
-
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotEmpty;
 import java.util.Set;

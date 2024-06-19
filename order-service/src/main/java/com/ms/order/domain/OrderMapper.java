@@ -3,11 +3,9 @@ package com.ms.order.domain;
 import com.ms.order.domain.models.CreateOrderRequest;
 import com.ms.order.domain.models.OrderItem;
 import com.ms.order.domain.models.OrderStatus;
-
 import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
-import java.util.stream.Collectors;
 
 class OrderMapper {
 
@@ -30,6 +28,4 @@ class OrderMapper {
         newOrder.setItems(orderItems);
         return newOrder;
     }
-
-
 }

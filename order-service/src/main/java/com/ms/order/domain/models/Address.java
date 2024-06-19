@@ -1,4 +1,5 @@
 package com.ms.order.domain.models;
+
 import jakarta.validation.constraints.NotBlank;
 
 public record Address(

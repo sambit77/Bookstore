@@ -26,6 +26,4 @@ public class OrderService {
         log.info("Created Order with orderNumber={}", savedOrder.getOrderNumber());
         return new CreateOrderResponse(savedOrder.getOrderNumber());
     }
-
-
 }

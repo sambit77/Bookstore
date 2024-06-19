@@ -1,16 +1,14 @@
 package com.ms.order.web.controllers;
 
-
 import com.ms.order.domain.OrderService;
 import com.ms.order.domain.SecurityService;
 import com.ms.order.domain.models.CreateOrderRequest;
 import com.ms.order.domain.models.CreateOrderResponse;
 import jakarta.validation.Valid;
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.*;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/orders")
@@ -32,5 +30,4 @@ class OrderController {
         log.info("Creating order for user: {}", userName);
         return orderService.createOrder(userName, request);
     }
-
 }
