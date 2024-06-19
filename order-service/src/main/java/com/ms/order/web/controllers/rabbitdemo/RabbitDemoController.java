@@ -12,20 +12,20 @@ public class RabbitDemoController {
     private final RabbitTemplate rabbitTemplate;
     private final ApplicationProperties applicationProperties;
 
-
     public RabbitDemoController(RabbitTemplate rabbitTemplate, ApplicationProperties applicationProperties) {
         this.rabbitTemplate = rabbitTemplate;
         this.applicationProperties = applicationProperties;
     }
 
     @PostMapping("/send")
-    public void sendMessage(@RequestBody MyMessage mymessage)
-    {
+    public void sendMessage(@RequestBody MyMessage mymessage) {
         rabbitTemplate.convertAndSend(
-                applicationProperties.orderEventsExchange(),mymessage.routingKey(),mymessage.payload()
-        );
+                applicationProperties.orderEventsExchange(), mymessage.routingKey(), mymessage.payload());
     }
 
-    public record MyMessage(String routingKey, MyPayload payload){};
-    public record MyPayload(String content){};
+    public record MyMessage(String routingKey, MyPayload payload) {}
+    ;
+
+    public record MyPayload(String content) {}
+    ;
 }
