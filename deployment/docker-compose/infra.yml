@@ -1,4 +1,4 @@
-name: 'bookstore-containers-network'
+name: 'bookstore-infra-network'
 services:
   catalog-db:
     image: postgres:16-alpine

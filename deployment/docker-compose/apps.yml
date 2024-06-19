@@ -1,4 +1,4 @@
-name: 'spring-boot-microservices-course'
+name: 'bookstore-apps-network'
 services:
   catalog-service:
     image: sambitgulu155/bookstore-catalog-service
