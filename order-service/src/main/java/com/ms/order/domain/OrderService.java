@@ -48,8 +48,16 @@ public class OrderService {
     }
 
     private void process(OrderEntity order) {
+
         try {
+            //            if(order.getDeliveryAddress().country().equalsIgnoreCase("Pakistan"))
+            //            {
+            //                log.error("Restricted country: {}", order.getOrderNumber());
+            //                orderRepository.updateOrderStatus(order.getOrderNumber(), OrderStatus.ERROR);
+            //                orderEventService.save(OrderEventMapper.buildOrderErrorEvent(order,"Pakistan jibini"));
+            //            }
             if (canBeDelivered(order)) {
+
                 log.info("OrderNumber: {} can be delivered", order.getOrderNumber());
                 orderRepository.updateOrderStatus(order.getOrderNumber(), OrderStatus.DELIVERED);
                 orderEventService.save(OrderEventMapper.buildOrderDeliveredEvent(order));
