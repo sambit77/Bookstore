@@ -1,6 +1,7 @@
 package com.ms.order.web.controllers.rabbitdemo;
 
 import com.ms.order.ApplicationProperties;
+import java.util.*;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
