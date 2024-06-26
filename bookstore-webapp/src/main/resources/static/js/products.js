@@ -6,10 +6,10 @@ document.addEventListener('alpine:init', () => {
         },
         init() {
             this.loadProducts(this.pageNo);
-            updateCartItemCount();
+            //updateCartItemCount();
         },
         loadProducts(pageNo) {
-            $.getJSON("http://localhost:8081/api/products?page="+pageNo, (resp)=> {
+            $.getJSON("http://localhost:8989/catalog/api/products?page="+pageNo, (resp)=> {
                 console.log("Products Resp:", resp)
                 this.products = resp;
             });
