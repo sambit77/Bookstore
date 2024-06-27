@@ -6,7 +6,7 @@
 #### Install [Docker](https://www.docker.com/) and ensure Docker is running.
 
 Start the Application: `docker compose -f ./deployment/infra.yml -f ./deployment/apps.yml up -d` <br>
-
+Endpoint-URL: [localhost:8080](http://localhost:8080/products?)
 Stop the Application:  `docker compose -f ./deployment/infra.yml -f ./deployment/apps.yml stop` <br>
 Remove Containers: `docker compose -f ./deployment/infra.yml -f ./deployment/apps.yml rm -f` <br>
 
