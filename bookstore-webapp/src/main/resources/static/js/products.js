@@ -9,7 +9,9 @@ document.addEventListener('alpine:init', () => {
             //updateCartItemCount();
         },
         loadProducts(pageNo) {
-            $.getJSON("http://localhost:8989/catalog/api/products?page="+pageNo, (resp)=> {
+            //$.getJSON("http://localhost:8989/catalog/api/products?page="+pageNo, (resp)=> {
+            //$.getJSON(apiGatewayUrl+"/catalog/api/products?page="+pageNo, (resp)=> {
+            $.getJSON("/api/products?page="+pageNo, (resp)=> {
                 console.log("Products Resp:", resp)
                 this.products = resp;
             });
