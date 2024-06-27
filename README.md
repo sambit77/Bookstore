@@ -13,7 +13,7 @@ Remove Containers: `docker compose -f ./deployment/infra.yml -f ./deployment/app
 
 ##### Install Taskfile for better managing of the application during development.
 ###### Follwoing command can be triggered from root of the application
-`task start_infra` : Starts only the dependent services in docker (PostgresSQL DB for 3 microservices, RabbitMQ, MailHog) post which 4 microservices (Catalog-Service, Order-Service, Notifications-Service, WebUI) can be manually run from GUI or using ./mvnw spring-boot:run command. <br>
+`task start_infra` : ###### Starts only the dependent services in docker (PostgresSQL DB for 3 microservices, RabbitMQ, MailHog) post which 4 microservices (Catalog-Service, Order-Service, Notifications-Service, WebUI) can be manually run from GUI or using ./mvnw spring-boot:run command. <br>
 `task start`: spin up all the services in docker. <br>
 `task test` : Runs tests for all the microservices by running ./mvnw clean package internally. <br>
 `task build` : Build docker image for all the microservices <br>
