@@ -3,7 +3,7 @@
 
 ## Steps to run the application:
 
-#### Install Docker and ensure Docker is running.
+#### Install [Docker](https://www.docker.com/) and ensure Docker is running.
 
 Start the Application: `docker compose -f ./deployment/infra.yml -f ./deployment/apps.yml up -d` <br>
 
