@@ -1,8 +1,8 @@
 package com.ms.bookstore.webapp.web.controllers;
 
 import com.ms.bookstore.webapp.clients.orders.*;
+import com.ms.bookstore.webapp.services.SecurityHelper;
 import jakarta.validation.Valid;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import org.slf4j.Logger;
@@ -16,9 +16,11 @@ public class OrderController {
 
     private static final Logger log = LoggerFactory.getLogger(OrderController.class);
     private final OrderServiceClient orderServiceClient;
+    private final SecurityHelper securityHelper;
 
-    OrderController(OrderServiceClient orderServiceClient) {
+    OrderController(OrderServiceClient orderServiceClient, SecurityHelper securityHelper) {
         this.orderServiceClient = orderServiceClient;
+        this.securityHelper = securityHelper;
     }
 
     @GetMapping("/cart")
@@ -62,8 +64,8 @@ public class OrderController {
     }
 
     private Map<String, ?> getHeaders() {
-        // String accessToken = securityHelper.getAccessToken();
-        // return Map.of("Authorization", "Bearer " + accessToken);
-        return new HashMap<>();
+        String accessToken = securityHelper.getAccessToken();
+        return Map.of("Authorization", "Bearer " + accessToken);
+        // return new HashMap<>();
     }
 }

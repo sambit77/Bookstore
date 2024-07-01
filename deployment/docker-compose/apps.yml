@@ -107,6 +107,7 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - BOOKSTORE_API_GATEWAY_URL=http://api-gateway:8989
+      - OAUTH2_SERVER_URL=http://keycloak:9191
     ports:
       - "8080:8080"
     restart: unless-stopped
