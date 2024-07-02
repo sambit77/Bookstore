@@ -37,6 +37,14 @@ This application displays a catalog of books fetched from database , enables use
 
   **TechStack:** Spring Boot, Spring Security OAuth2, Keycloak, Thymeleaf, Alpine.js, Bootstrap
 
+* **Bookstore-Web-Application**:  [localhost:8080](http://localhost:8080/)
+* **Swagger-API-Docs+API-Gateway**:  [localhost:8989](http://localhost:8989/)
+* **Prometheus-For-Monitoring-Metrics**: [localhost:9090](http://localhost:9090/targets?search=)
+* **Grafana-UI+Traceing-Using-Tempo+LogDump-Using-Promatail-And-Loki**: [localhost:3000](http://localhost:3000)
+* **KeyCloak-For-Access-Management** [localhost:9191](http://localhost:9191/)
+* **Mailhog-Dummy-MailBox** [localhost:8025](http://localhost:8025/)
+* **Rabbit-MQ** [localhost:15672](http://localhost:15672/)
+
 ## Other Key Learnings:- 
 
 *  Database Persistence using Flyway DB Migrations 
