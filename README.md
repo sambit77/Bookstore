@@ -1,4 +1,4 @@
-# Bookstore Application
+![bookstore-spring-microservices-layout](https://github.com/sambit77/Bookstore/assets/46903174/bd883d49-ec8f-410c-9224-6c12f9a9eb9a)# Bookstore Application
 ##### Please refer Projects tab for step-to-step implementation of the project container-wise
 
 ## Steps to run the application:
@@ -8,7 +8,7 @@
 3. Endpoint-URL: [localhost:8080](http://localhost:8080/products?) <br>
 4. Stop the Application:  `docker compose -f ./deployment/docker-compose/infra.yml -f ./deployment/docker-compose/apps.yml stop` <br>
 5. Remove Containers: `docker compose -f ./deployment/docker-compose/infra.yml -f ./deployment/docker-compose/apps.yml rm -f` <br>
-![BookStore Microservices Architecture](docs/bookstore-spring-microservices.png) 
+![BookStore Microservices Architecture](docs/bookstore-spring-microservices-layout.png) 
 ## Modules
 * **catalog-service**: 
   This services provides REST API for managing catalog of products(books).
