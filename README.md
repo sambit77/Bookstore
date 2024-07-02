@@ -1,5 +1,8 @@
-![bookstore-spring-microservices-layout](https://github.com/sambit77/Bookstore/assets/46903174/bd883d49-ec8f-410c-9224-6c12f9a9eb9a)# Bookstore Application
+# Bookstore Application
 ##### Please refer Projects tab for step-to-step implementation of the project container-wise
+```
+This application displays a catalog of books fetched from database , enables users to browse through the books and post logging in they can place orders , which will be further processed by the backend application.
+```
 
 ## Steps to run the application:
 #### Install [Docker](https://www.docker.com/) and ensure Docker is running.
