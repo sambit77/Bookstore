@@ -40,10 +40,10 @@ This application displays a catalog of books fetched from database , enables use
 * **Bookstore-Web-Application**:  [localhost:8080](http://localhost:8080/) Users:{sambit,sambit1234} & {virat,virat1234}
 * **Swagger-API-Docs+API-Gateway**:  [localhost:8989](http://localhost:8989/)
 * **Prometheus-For-Monitoring-Metrics**: [localhost:9090](http://localhost:9090/targets?search=)
-* **Grafana-UI+Traceing-Using-Tempo+LogDump-Using-Promatail-And-Loki**: [localhost:3000](http://localhost:3000)
-* **KeyCloak-For-Access-Management** [localhost:9191](http://localhost:9191/)
-* **Mailhog-Dummy-MailBox** [localhost:8025](http://localhost:8025/)
-* **Rabbit-MQ** [localhost:15672](http://localhost:15672/)
+* **Grafana-UI+Traceing-Using-Tempo+LogDump-Using-Promatail-And-Loki**: [localhost:3000](http://localhost:3000) {admin,admin123}
+* **KeyCloak-For-Access-Management** [localhost:9191](http://localhost:9191/) {admin,admin1234}
+* **Mailhog-Dummy-MailBox** [localhost:8025](http://localhost:8025/) 
+* **Rabbit-MQ** [localhost:15672](http://localhost:15672/) {guues,guest}
 
 ## Other Key Learnings:- 
 
