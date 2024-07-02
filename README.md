@@ -40,25 +40,13 @@ This application displays a catalog of books fetched from database , enables use
 ## Other Key Learnings:- 
 
 *  Database Persistence using Flyway DB Migrations 
-
-  **TechStack:** Spring Data JPA, Postgres, Flyway DB Migrations
-
 *  Event Driven Async Communication using RabbitMQ
-
-  **TechStack:** Rabbit MQ
-
 *  Job Scheduling with ShedLock-based distributed Locking
-
 *  Using RestClient, Declarative HTTP Interfaces to invoke other APIs
 *  Creating Aggregated Swagger Documentation at API Gateway
 *  Local Development Setup using Docker, Docker Compose and Testcontainers
 *  Testing using JUnit 5, RestAssured, Testcontainers, Awaitility, WireMock
 *  Monitoring & Observability using Grafana, Prometheus, Loki, Tempo
-
-
-
-
-
 
 ##### Install [Taskfile](https://taskfile.dev/) for better managing of the application during development.
 ###### Follwoing command can be triggered from root of the application
