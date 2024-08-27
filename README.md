@@ -2,7 +2,7 @@
 ##### Please refer Projects tab for step-to-step implementation of the project container-wise
 
 This application displays a catalog of books fetched from database , enables users to browse through the books and post logging in they can place orders , which will be further processed by the backend application.
-
+![BookStore Microservices Architecture](docs/bookstore-spring-microservices-layout.png) 
 ## Steps to run the application:
 #### Install [Docker](https://www.docker.com/) and ensure Docker is running.
 1. Clone the repository: `git clone https://github.com/sambit77/Bookstore.git && cd Bookstore`
@@ -10,7 +10,7 @@ This application displays a catalog of books fetched from database , enables use
 3. Endpoint-URL: [localhost:8080](http://localhost:8080/products?) <br>
 4. Stop the Application:  `docker compose -f ./deployment/docker-compose/infra.yml -f ./deployment/docker-compose/apps.yml stop` <br>
 5. Remove Containers: `docker compose -f ./deployment/docker-compose/infra.yml -f ./deployment/docker-compose/apps.yml rm -f` <br>
-![BookStore Microservices Architecture](docs/bookstore-spring-microservices-layout.png) 
+
 ## Modules
 * **catalog-service**: 
   This services provides REST API for managing catalog of products(books).
